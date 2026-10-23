@@ -1,0 +1,82 @@
+{
+  "package": "Landsat-SCD training data",
+  "prepared_date": "2026-10-23",
+  "source": {
+    "doi": "10.6084/m9.figshare.19946135.v1",
+    "title": "Landsat-SCD_dataset.zip",
+    "version": 1,
+    "figshare_depositor_display_names": [
+      "Yuan Panli"
+    ],
+    "paper_authors": [
+      "Panli Yuan",
+      "Qingzhan Zhao",
+      "Xingbiao Zhao",
+      "Xuewen Wang",
+      "Xuefeng Long",
+      "Yuchen Zheng"
+    ],
+    "paper_citation": "Panli Yuan, Qingzhan Zhao, Xingbiao Zhao, Xuewen Wang, Xuefeng Long and Yuchen Zheng (2022). A transformer-based Siamese network and an open optical dataset for semantic change detection of remote sensing images. International Journal of Digital Earth, 15(1), 1506-1525. https://doi.org/10.1080/17538947.2022.2111470",
+    "record_url": "https://figshare.com/articles/figure/Landsat-SCD_dataset_zip/19946135/1",
+    "metadata_url": "https://api.figshare.com/v2/articles/19946135/versions/1",
+    "metadata_checked_date": "2026-10-23",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "upstream_archive": {
+      "name": "Landsat-SCD_dataset.zip",
+      "size_bytes": 4400617661,
+      "md5": "c66a53c2c0ef12c8d232418200e4952a",
+      "note": "Identifies the upstream archive, not this repackaged release."
+    }
+  },
+  "layout": {
+    "sample_count": 2385,
+    "dimensions_pixels": [
+      416,
+      416
+    ],
+    "image_directories": [
+      "A",
+      "B"
+    ],
+    "image_mode": "RGB",
+    "semantic_mask_directories": [
+      "labelA",
+      "labelB"
+    ],
+    "semantic_mask_mode": "grayscale",
+    "label_values": {
+      "0": "No change",
+      "1": "Farmland",
+      "2": "Desert",
+      "3": "Building",
+      "4": "Water"
+    },
+    "split_counts": {
+      "train_list.txt": 1431,
+      "val_list.txt": 477,
+      "test_list.txt": 477
+    },
+    "original_split_sha256": {
+      "train_list.txt": "acb9f345547175d1f2493159eb693558721148b5e17b2cf0a6986f139c47252e",
+      "val_list.txt": "b59582718e0b7fb032fed1dda08649bec1ad67477fec28ebb2d2d75c922017c9",
+      "test_list.txt": "3a7355d8cf7cdb0e6997e613cc8e954773760aa7852d1de3613e6df274b2bfd0"
+    }
+  },
+  "packaging_changes": [
+    "Exact supplied core PNG and split-list bytes preserved.",
+    "Optional labelA_rgb and labelB_rgb visualization directories omitted.",
+    "Added documentation, sanitized provenance, official license text and SHA-256 manifest.",
+    "No model, training or preprocessing implementation included."
+  ],
+  "known_excluded_issue": {
+    "path": "labelB_rgb/From1992To1998_01.png",
+    "size_bytes": 33,
+    "issue": "Corrupt optional visualization PNG in the supplied input; not repaired or redistributed."
+  },
+  "license_text_source_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+  "upstream_archive_byte_identity_claimed": false
+}

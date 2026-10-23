@@ -1,0 +1,102 @@
+{
+  "package": "SECOND research split lists and checksums",
+  "prepared_date": "2026-10-23",
+  "package_scope": "Split lists, local core-data checksums and documentation only; no imagery, labels or algorithm source files.",
+  "original_dataset": {
+    "name": "SECOND",
+    "authors": [
+      "Kunping Yang",
+      "Gui-Song Xia",
+      "Zicheng Liu",
+      "Bo Du",
+      "Wen Yang",
+      "Marcello Pelillo",
+      "Liangpei Zhang"
+    ],
+    "official_project_url": "https://captain-whu.github.io/SCD/",
+    "official_download_url": "https://drive.google.com/file/d/1mN8jzCKKK27p3ODGoDgepjiRYGQpB34u/view?usp=sharing",
+    "official_repository_url": "https://github.com/CAPTAIN-WHU/SCD",
+    "arxiv_url": "https://arxiv.org/abs/2010.05687",
+    "published_paper_doi": "10.1109/TGRS.2021.3113912",
+    "total_sample_count": 4662,
+    "official_training_pool_count": 2968,
+    "official_separate_test_count": 1694,
+    "archive_training_pool_name": "SECOND_train_set.rar",
+    "archive_separate_test_name": "SECOND_total_test.zip",
+    "repository_license": "Apache-2.0",
+    "external_dataset_redistribution_license_status": "Not confirmed by reviewed source materials; repository license coverage of the external data archive is unresolved.",
+    "external_dataset_new_license_assigned": false,
+    "data_mirrored_in_this_package": false
+  },
+  "research_partition": {
+    "origin": "Repartition of the original 2968-sample training pool.",
+    "list_counts": {
+      "list/train.txt": 2375,
+      "list/test.txt": 593
+    },
+    "original_list_sha256": {
+      "list/train.txt": "4dcec4f189da07f270b6ce6c56d943cead1e719332890729b1bf966c23aca676",
+      "list/test.txt": "c2b4bac7fe93aee1f971b85409f72a81da5f7a39dbd412f32bdde04312e52a8e"
+    },
+    "original_list_bytes_and_order_preserved": true,
+    "sample_id_format": "Five digits without a file extension.",
+    "unique_union_count": 2968,
+    "intersection_count": 0,
+    "duplicates_per_list": {
+      "list/train.txt": 0,
+      "list/test.txt": 0
+    },
+    "union_matches_official_training_pool_ids_in_all_four_directories": true,
+    "test_list_is_official_1694_sample_test_set": false,
+    "split_generation_method_and_seed": "Not inferred from existing split lists."
+  },
+  "data_manifest": {
+    "file": "DATA-MANIFEST-SHA256.txt",
+    "sha256": "ef8f155c9bbf5cf8283fe03a12982f8ce983f1c61538a935699a5ad3d77e0e86",
+    "algorithm": "SHA-256",
+    "entry_count": 11872,
+    "samples_per_directory": 2968,
+    "directories": [
+      "A",
+      "B",
+      "label1",
+      "label2"
+    ],
+    "path_base": "Data root, not metadata package root.",
+    "local_to_official_directory_roles": {
+      "A": "im1",
+      "B": "im2",
+      "label1": "label1",
+      "label2": "label2"
+    },
+    "hash_scope": "Exact locally supplied core PNG bytes; not a newly downloaded full-pixel comparison with the official archive.",
+    "unlisted_auxiliary_png_counts_excluded": {
+      "A": 2,
+      "B": 2,
+      "label1": 0,
+      "label2": 0
+    }
+  },
+  "local_validation": {
+    "performed_date": "2026-10-23",
+    "referenced_files_present_and_aligned": true,
+    "referenced_files_hashed_and_rehashed": 11872,
+    "all_second_pass_hashes_equal": true,
+    "source_tree_sizes_and_mtimes_unchanged_after_hashing": true,
+    "source_split_checksums_unchanged": true,
+    "local_png_audit_completed_utc": "2026-10-23T04:30:41.485996+00:00",
+    "local_png_audit_method": "Pillow verify(), then reopen and load() for full pixel decoding.",
+    "local_png_audit_total_including_auxiliary_files": 11876,
+    "local_png_audit_verify_and_full_decode_pass_count": 11876,
+    "local_png_audit_error_count": 0,
+    "referenced_png_dimensions_pixels": [
+      512,
+      512
+    ],
+    "referenced_png_mode": "RGB, including color-coded labels",
+    "prior_decode_audit_file_sizes_and_mtimes_match_at_packaging": true,
+    "decode_audit_evidence_sha256": "3b91b2ecebdb6793833356b4fbc6607e013bd76dea212cbc5fc2b629afc395d5",
+    "official_training_directory_metadata_evidence_sha256": "960b8d9407bec74b77c5dedaf93096afee2edaa072e5adf1e3dc635fffadfb69",
+    "official_test_directory_metadata_evidence_sha256": "6122425e8cfc396386885d280bd9f6a4b50a37887d2495ffc14fef879791dba1"
+  }
+}
