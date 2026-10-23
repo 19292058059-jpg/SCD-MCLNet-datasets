@@ -34,7 +34,7 @@ SECOND was introduced by Kunping Yang, Gui-Song Xia, Zicheng Liu, Bo Du, Wen Yan
 
 ## Integrity
 
-Download each ZIP and its matching .sha256 file into the same directory. Verify using sha256sum -c <checksum filename>, or compare PowerShell Get-FileHash -Algorithm SHA256 <ZIP filename> with:
+Download each ZIP and its matching .sha256 file into the same directory. Run `sha256sum -c Landsat-SCD-training-data.zip.sha256` or `sha256sum -c SECOND-splits-and-checksums.zip.sha256`. On PowerShell, compare `Get-FileHash -Algorithm SHA256 Landsat-SCD-training-data.zip` (or the SECOND ZIP filename) with:
 
 ```text
 e81e718752318eeedd2880690c694666f46fdd7961e8a4f3fe1c4f0f3c898179  Landsat-SCD-training-data.zip
